@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zebilebg76-cell.github.io/GeekPage/sitemap.xml
