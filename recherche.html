@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeekPage — Recherche</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">GP</span>
+          <span>GeekPage</span>
+        </div>
+        <nav>
+          <a href="index.html">Accueil</a>
+          <a href="recherche.html">Recherche</a>
+          <a href="tendances.html">Tendances</a>
+          <a href="actualites.html">À la une</a>
+        </nav>
+        <a href="rapport.html" class="btn btn-primary">Signaler</a>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <section class="page-hero">
+          <span class="eyebrow">Recherche de jeux</span>
+          <h1>Explorer le marché des jeux vidéo</h1>
+          <p>Recherchez un titre, comparez les performances, analysez les tendances de marché et identifiez les leviers de fidélisation pour chaque jeu.</p>
+        </section>
+
+        <div class="metric-strip">
+          <div class="metric-box">
+            <small>Jeux indexés</small>
+            <strong>35+</strong>
+          </div>
+          <div class="metric-box">
+            <small>Engagement moyen</small>
+            <strong>82%</strong>
+          </div>
+          <div class="metric-box">
+            <small>Sorties suivies</small>
+            <strong>146</strong>
+          </div>
+          <div class="metric-box">
+            <small>Joueurs surveillés</small>
+            <strong>31K</strong>
+          </div>
+        </div>
+
+        <div class="page-grid">
+          <div class="page-card">
+            <h3>Recherche rapide</h3>
+            <form id="quickSearchForm" class="search-form" action="#">
+              <input id="gameSearchInput" type="search" placeholder="Tapez un titre comme GTA V, Fortnite, Elden Ring..." />
+              <button id="searchGameButton" class="btn btn-primary" type="submit">Rechercher</button>
+            </form>
+            <div id="gameSearchResults" class="game-results" aria-live="polite"></div>
+          </div>
+
+          <div class="page-card">
+            <h3>Filtres actifs</h3>
+            <ul>
+              <li>Plateformes multi-support</li>
+              <li>Analyse de popularité</li>
+              <li>Retenu / engagement</li>
+              <li>Monétisation live</li>
+            </ul>
+          </div>
+
+          <div class="page-card">
+            <h3>État du marché</h3>
+            <ul>
+              <li>RPG et co-op en croissance</li>
+              <li>Battle Royales stables</li>
+              <li>Sandbox très rentable</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© 2026 GeekPage</div>
+        <div>
+          <a href="index.html">Accueil</a>
+          <a href="recherche.html">Recherche</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

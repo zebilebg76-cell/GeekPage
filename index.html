@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeekPage</title>
+    <meta
+      name="description"
+      content="Un site de recherche spécialisé dans les tendances, le comportement des joueurs et l'analyse du marché du jeu vidéo."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">GP</span>
+          <span>GeekPage</span>
+        </div>
+        <nav>
+          <a href="#insights">Analyses</a>
+          <a href="#projects">Études</a>
+          <a href="#news">À la une</a>
+          <a href="#method">Méthode</a>
+          <a href="#about">À propos</a>
+        </nav>
+        <button id="reportBtn" class="btn btn-primary">Signaler</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Plateforme de recherche sur les jeux vidéo</span>
+            <h1>Comprenez ce que veulent les joueurs avant la prochaine grande sortie.</h1>
+            <p>
+              Suivez les tendances d’engagement, de fidélisation, d’accessibilité,
+              de monétisation et de croissance communautaire sur les jeux les plus importants du marché.
+            </p>
+            <div class="hero-actions">
+              <button id="exploreBtn" class="btn btn-primary">Explorer la recherche</button>
+              <button id="trendBtn" class="btn btn-secondary">Voir les tendances</button>
+              <button id="newsBtn" class="btn btn-secondary">À la une</button>
+            </div>
+            <ul class="mini-stats">
+              <li><strong>31K</strong><span>Joueurs enquêtés</span></li>
+              <li><strong>19</strong><span>Marchés suivis</span></li>
+              <li><strong>7,4%</strong><span>Gain moyen de fidélisation</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-panel">
+            <div class="panel-card">
+              <div class="panel-header">
+                <span>Tableau de bord en direct</span>
+                <span class="status-pill">En direct</span>
+              </div>
+
+              <div class="trend-row">
+                <span>Fidélisation</span>
+                <div class="bar-group">
+                  <span class="bar c1" style="height: 52%"></span>
+                  <span class="bar c2" style="height: 64%"></span>
+                  <span class="bar c3" style="height: 74%"></span>
+                  <span class="bar c4" style="height: 83%"></span>
+                  <span class="bar c5" style="height: 92%"></span>
+                </div>
+              </div>
+
+              <div class="metric-grid">
+                <div>
+                  <small>Engagement</small>
+                  <strong>82%</strong>
+                </div>
+                <div>
+                  <small>Conversion</small>
+                  <strong>26%</strong>
+                </div>
+                <div>
+                  <small>Durée de session</small>
+                  <strong>2,4h</strong>
+                </div>
+                <div>
+                  <small>Disponibilité</small>
+                  <strong>99,2%</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-band">
+        <div class="container stats-grid">
+          <div>
+            <strong>4,8M</strong>
+            <span>Points de données mensuels</span>
+          </div>
+          <div>
+            <strong>82%</strong>
+            <span>Indice de satisfaction</span>
+          </div>
+          <div>
+            <strong>146</strong>
+            <span>Études publiées</span>
+          </div>
+          <div>
+            <strong>24/7</strong>
+            <span>Surveillance multi-plateformes</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="researchSearch" class="research-search">
+        <div class="container">
+          <div class="search-panel">
+            <div class="search-header">
+              <div>
+                <span class="eyebrow">Base de données</span>
+                <h2>Rechercher un jeu vidéo</h2>
+              </div>
+            </div>
+
+            <div class="search-controls">
+              <input id="gameSearchInput" type="search" placeholder="Tapez un titre comme Fortnite, Elden Ring, Minecraft..." />
+              <button id="searchGameButton" class="btn btn-primary">Rechercher</button>
+            </div>
+
+            <div id="gameSearchResults" class="game-results" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="insights" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="eyebrow">Points clés</span>
+              <h2>Les domaines qui façonnent l’industrie</h2>
+            </div>
+            <a href="#" class="link-arrow">Voir tous les rapports</a>
+          </div>
+
+          <div class="insight-grid">
+            <article class="info-card accent-purple">
+              <div class="icon">📈</div>
+              <h3>Fidélisation et engagement</h3>
+              <p>
+                Identifiez les mécanismes qui incitent les joueurs à revenir régulièrement
+                et l’impact des boucles de progression sur la valeur à long terme.
+              </p>
+            </article>
+            <article class="info-card accent-blue">
+              <div class="icon">🎮</div>
+              <h3>Performance des genres</h3>
+              <p>
+                Comparez les jeux multijoueurs, RPG, sandbox et co-op pour voir où se déplace
+                l’attention des joueurs.
+              </p>
+            </article>
+            <article class="info-card accent-green">
+              <div class="icon">🧠</div>
+              <h3>Psychologie des joueurs</h3>
+              <p>
+                Mesurez la motivation, le timing des récompenses et les déclencheurs sociaux
+                pour comprendre pourquoi les joueurs restent ou partent.
+              </p>
+            </article>
+            <article class="info-card accent-gold">
+              <div class="icon">💸</div>
+              <h3>Monétisation</h3>
+              <p>
+                Évaluez les structures cosmétiques, les battle passes et les économies en jeu
+                sans dégrader la confiance des utilisateurs.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="eyebrow">Suivi du marché</span>
+              <h2>Tendances récentes du jeu vidéo</h2>
+            </div>
+            <div class="filters" aria-label="Filtres de jeux">
+              <button class="filter-btn active" data-filter="all">Tous</button>
+              <button class="filter-btn" data-filter="multiplayer">Multijoueur</button>
+              <button class="filter-btn" data-filter="rpg">RPG</button>
+              <button class="filter-btn" data-filter="sandbox">Sandbox</button>
+              <button class="filter-btn" data-filter="co-op">Co-op</button>
+            </div>
+          </div>
+
+          <div class="search-row">
+            <input id="searchInput" type="search" placeholder="Rechercher un jeu ou un sujet de recherche" />
+          </div>
+
+          <div class="project-grid" id="projectGrid">
+            <article class="project-card" data-category="multiplayer co-op">
+              <span class="tag">Multijoueur</span>
+              <h3>Helldivers 2</h3>
+              <p>La cohésion des missions en équipe et la fidélisation sociale restent exceptionnelles.</p>
+              <ul>
+                <li>+31 % d’engagement hebdomadaire</li>
+                <li>Fidélisation élevée des squads</li>
+                <li>Fortes performances multi-plateformes</li>
+              </ul>
+            </article>
+
+            <article class="project-card" data-category="rpg">
+              <span class="tag">RPG</span>
+              <h3>Baldur's Gate 3</h3>
+              <p>La profondeur des décisions et la rejouabilité narrative favorisent une valeur premium durable.</p>
+              <ul>
+                <li>Taux de complétion de l’histoire : 91 %</li>
+                <li>Fort intérêt pour les mods</li>
+                <li>Bonne conversion avis-vers-achat</li>
+              </ul>
+            </article>
+
+            <article class="project-card" data-category="sandbox multiplayer">
+              <span class="tag">Sandbox</span>
+              <h3>Fortnite</h3>
+              <p>Les boucles de contenu et les événements en direct continuent d’alimenter la fidélisation.</p>
+              <ul>
+                <li>Fréquence élevée des événements</li>
+                <li>Écosystème créatif très solide</li>
+                <li>Faible churn chez les joueurs compétitifs</li>
+              </ul>
+            </article>
+
+            <article class="project-card" data-category="rpg co-op">
+              <span class="tag">Co-op</span>
+              <h3>Diablo IV</h3>
+              <p>La stratégie de contenu saisonnier et le rythme des loot façonnent les sessions de retour.</p>
+              <ul>
+                <li>Hausse de fidélisation saisonnière</li>
+                <li>Participation élevée aux raids</li>
+                <li>Bonne monétisation des cosmétiques</li>
+              </ul>
+            </article>
+
+            <article class="project-card" data-category="multiplayer sandbox">
+              <span class="tag">Compétitif</span>
+              <h3>Apex Legends</h3>
+              <p>L’amélioration du rythme des matchs et de l’onboarding réduit le churn des nouveaux joueurs.</p>
+              <ul>
+                <li>Complétion du tutoriel améliorée</li>
+                <li>Fidélisation élevée des joueurs experts</li>
+                <li>Faible abandon après le jour 3</li>
+              </ul>
+            </article>
+
+            <article class="project-card" data-category="co-op sandbox">
+              <span class="tag">Co-op</span>
+              <h3>Valheim</h3>
+              <p>La progression et la découverte guidées par la communauté restent essentielles pour le jeu à long terme.</p>
+              <ul>
+                <li>Très bonnes boucles de jeu social</li>
+                <li>Fort contenu généré par la communauté</li>
+                <li>Participation longue en session</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="method" class="section">
+        <div class="container method-grid">
+          <div>
+            <span class="eyebrow">Méthodologie</span>
+            <h2>Une analyse fondée sur des preuves pour les équipes de jeux</h2>
+            <p>
+              Notre recherche combine enquêtes communautaires, analyse de performance,
+              entretiens avec les joueurs et benchmarking du marché pour révéler les tendances qui comptent.
+            </p>
+            <ul class="check-list">
+              <li>Analyse de télémétrie de jeu</li>
+              <li>Étude du sentiment des joueurs</li>
+              <li>Suivi des créateurs et de la communauté</li>
+              <li>Suivi des expérimentations en direct</li>
+            </ul>
+          </div>
+          <div class="method-card">
+            <div class="method-item">
+              <strong>1.</strong>
+              <div>
+                <h4>Observer</h4>
+                <p>Suivre le comportement réel des joueurs sur plusieurs sessions, événements et matchs.</p>
+              </div>
+            </div>
+            <div class="method-item">
+              <strong>2.</strong>
+              <div>
+                <h4>Mesurer</h4>
+                <p>Relier les données de performance au sentiment des joueurs et aux tendances de conversion.</p>
+              </div>
+            </div>
+            <div class="method-item">
+              <strong>3.</strong>
+              <div>
+                <h4>Recommander</h4>
+                <p>Des stratégies concrètes pour renforcer l’engagement et la confiance à long terme.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="news" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="eyebrow">Actualités & futur</span>
+              <h2>Actualités du jeu vidéo et sorties à venir</h2>
+            </div>
+          </div>
+
+          <div class="news-grid">
+            <div class="news-column">
+              <h3>Actualités</h3>
+              <div id="newsFeed" class="mini-news-list"></div>
+            </div>
+
+            <div class="news-column">
+              <h3>Jeux récemment sortis</h3>
+              <div id="recentGames" class="mini-news-list"></div>
+            </div>
+
+            <div class="news-column">
+              <h3>Jeux qui vont sortir</h3>
+              <div id="futureGames" class="mini-news-list"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© 2026 GeekPage</div>
+        <div>
+          <a href="#">Confidentialité</a>
+          <a href="#">Rapports</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

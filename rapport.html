@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeekPage — Rapport</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">GP</span>
+          <span>GeekPage</span>
+        </div>
+        <nav>
+          <a href="index.html">Accueil</a>
+          <a href="recherche.html">Recherche</a>
+          <a href="tendances.html">Tendances</a>
+          <a href="actualites.html">À la une</a>
+        </nav>
+        <a href="rapport.html" class="btn btn-primary">Signaler</a>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <section class="page-hero">
+          <span class="eyebrow">Support GeekPage</span>
+          <h1>Signaler une erreur</h1>
+          <p>Décrivez un problème rencontré sur le site pour nous aider à le corriger.</p>
+        </section>
+
+        <div class="page-grid">
+          <div class="page-card">
+            <h3>Avant de signaler</h3>
+            <ul>
+              <li>Indiquez la page concernée</li>
+              <li>Décrivez clairement le problème</li>
+              <li>Ajoutez les étapes pour le reproduire</li>
+              <li>Précisez le résultat attendu</li>
+            </ul>
+          </div>
+
+          <div class="page-card">
+            <h3>Votre signalement</h3>
+            <form id="reportForm" class="report-form">
+              <label for="reportPage">Page concernée</label>
+              <select id="reportPage" name="page" required>
+                <option value="">Choisir une page</option>
+                <option>Accueil</option>
+                <option>Recherche</option>
+                <option>Tendances</option>
+                <option>À la une</option>
+                <option>Fiche d’un jeu</option>
+                <option>Signalement</option>
+                <option>Autre page du site</option>
+              </select>
+              <label for="reportType">Type de problème</label>
+              <select id="reportType" name="type" required>
+                <option value="">Choisir un type</option>
+                <option>Erreur d’affichage</option>
+                <option>Lien ou bouton non fonctionnel</option>
+                <option>Erreur dans les informations</option>
+                <option>Autre problème</option>
+              </select>
+              <label for="reportDescription">Description</label>
+              <textarea id="reportDescription" name="description" placeholder="Décrivez l’erreur et les étapes pour la reproduire..." required></textarea>
+              <label for="reportEmail">Adresse e-mail</label>
+              <input id="reportEmail" name="email" type="email" value="zebilebg76@gmail.com" readonly aria-readonly="true" />
+              <button class="btn btn-primary" type="submit">Envoyer le signalement</button>
+              <p id="reportStatus" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <div class="page-card">
+            <h3>Merci pour votre aide</h3>
+            <ul>
+              <li>Chaque signalement est utile</li>
+              <li>Les informations sont examinées par l’équipe</li>
+              <li>Les corrections sont publiées progressivement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© 2026 GeekPage</div>
+        <div>
+          <a href="index.html">Accueil</a>
+          <a href="rapport.html">Rapport</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

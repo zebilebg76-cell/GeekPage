@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeekPage — Fiche de jeu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="Retour à l'accueil">
+          <span class="brand-mark">GP</span>
+          <span>GeekPage</span>
+        </a>
+        <nav>
+          <a href="index.html">Accueil</a>
+          <a href="recherche.html">Recherche</a>
+          <a href="tendances.html">Tendances</a>
+          <a href="actualites.html">À la une</a>
+        </nav>
+        <a href="rapport.html" class="btn btn-primary">Signaler</a>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <section class="game-detail-hero">
+          <a class="back-link" href="javascript:history.back()">← Retour à la liste</a>
+          <span class="eyebrow" id="gameDetailGenre">Fiche de recherche</span>
+          <h1 id="gameDetailTitle">Jeu vidéo</h1>
+          <p id="gameDetailSummary">Chargement de la fiche du jeu...</p>
+        </section>
+
+        <section class="game-detail-layout" aria-label="Informations détaillées du jeu">
+          <div class="game-detail-card">
+            <div class="section-header compact-header">
+              <div>
+                <span class="eyebrow">Données clés</span>
+                <h2>Profil du jeu</h2>
+              </div>
+            </div>
+            <dl class="game-facts" id="gameFacts"></dl>
+          </div>
+          <aside class="game-detail-card game-research-note">
+            <span class="eyebrow">Analyse GeekPage</span>
+            <h2>Ce qu'il faut retenir</h2>
+            <p id="gameDetailInsight"></p>
+            <a class="btn btn-secondary" href="recherche.html">Rechercher un autre jeu</a>
+          </aside>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© 2026 GeekPage</div>
+        <div>
+          <a href="index.html">Accueil</a>
+          <a href="actualites.html">À la une</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
